@@ -2,7 +2,10 @@
 -module(file).
 -author("Administrator").
 
--type posix() ::   eacces | eagain | ebadf
+-type posix() ::
+   eacces
+ | eagain
+ | ebadf
  | ebusy
  | edquot
  | eexist
@@ -32,6 +35,7 @@
  | esrch
  | estale
  | exdev.
+
 %% API
 -export([read_terms/1, write_terms/2]).
 
